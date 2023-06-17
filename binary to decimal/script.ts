@@ -62,3 +62,4 @@
         }
     }
 })();
+// or just use parseInt(binary, 2).....
