@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- MAMDENI ELEMENTIS WERAS ELEMTNIC INPUT GAAEKTA -->
     <div>
         <div class="one-row">
             <li class="rope"></li>
@@ -37,19 +37,19 @@
 
     <div class="user-inputs">
        <div class="first-input">
-        <button id="startStopBtnID">Start/Stop</button>
+        <button id="startStopBtnID">Start</button>
         <h1>Speed:</h1>
-        <div><input type="number">
-        <button>RUN</button></div></div>
+        <div><input type="number" id="speedID" min="1">
+        <button id="runBtnID">RUN</button></div></div>
 
         <div class="second-input">
             <div class="color-input">
                 <h1>Color:</h1>
                 <div>
-                    <label for="first">First</label>
-                    <input type="color" name="first">
+                    <input id="elementNumberID" type="number" placeholder="element number" min="1" max="7">
+                    <input id="colorInputID" type="color" name="first">
                 </div>
-                <div>
+                <!-- <div>
                     <label for="second">Second</label>
                     <input type="color" name="second">
                 </div>
@@ -72,37 +72,23 @@
                 <div>
                     <label for="seventh">Seventh</label>
                     <input type="color" name="seventh">
-                </div>
+                </div> -->
             </div>
 
-            <div>
+            <div class="intensity-input">
                 <h1>Intensity:</h1>
-                <div>
-                    <label for="first">First</label>
-                    <input type="number" name="first">
-                    <label for="second">Second</label>
-                    <input type="number" name="second">
-                    <label for="third">Third</label>
-                    <input type="number" name="third">
-                    <label for="fourth">Fourth</label>
-                    <input type="number" name="fourth">
-                    <label for="fifth">Fifth</label>
-                    <input type="number" name="fifth">
-                    <label for="sixth">Sixth</label>
-                    <input type="number" name="sixth">
-                    <label for="seventh">Seventh</label>
-                    <input type="number" name="seventh">
-                </div>
+                <input id="intensityID" type="number">
             </div>
 
-            <div>
+            <div class="size-input">
                 <h1>Size:</h1>
                 <div>
                     <div>
-                        <input type="number" placeholder="first width">
-                        <input type="number" placeholder="first height">
+                        <input id="elementNumberID" type="number" placeholder="element number">
+                        <input id="widthID" type="number" placeholder="width">
+                        <input id="heightID" type="number" placeholder="height">
                     </div>
-                    <div>
+                    <!-- <div>
                         <input type="number" placeholder="second width">
                         <input type="number" placeholder="second height">
                     </div>
@@ -125,13 +111,13 @@
                     <div>
                         <input type="number" placeholder="seventh width">
                         <input type="number" placeholder="seventh height">
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
-            <div>
+            <div class="rows-input">
                 <h1>Number of rows</h1>
-                <input type="number">
+                <input id="rowNoID" type="number" min="1" max="7">
             </div>
         </div>
     </div>

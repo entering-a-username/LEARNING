@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color cyle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="box">
+
+    </div>
+    <!-- WARNING -->
+
+<!-- starting color, increment value for each color component, start/stop, warning -->
+    <div class="inputs">
+        <button id="fillBtnID"></button>
+        <label for="color">Starting Color</label>
+        <!-- change placeholder too -->
+        <input type="text" id="startingColorID" placeholder="#ffffff"> <!-- ^^^^ #ffffff ++ warning-->
+        <!-- put # inside input -->
+        <label for="encoding">Choose Encoding</label>
+        <select id="encodingID">
+            <option value="HEX">HEX (Hexadecimal)</option>
+            <option value="RGB">RGB (Red, Green, Blue)</option>
+            <option value="HSL">HSL (Hue, Saturation, Lightness)</option>
+            <option value="HSV/HSB">HSV/HSB (Hue, Saturation, Value/Brightness)</option>
+            <option value=""></option>
+        </select>
+
+        <div>
+            <label for="increment">Increment Value</label>
+            <input type="number" id="incrementRedID" min="0">
+            <input type="number" id="incrementGreenID" min="0">
+            <input type="number" id="incrementBlueID" min="0">
+        </div>
+
+        <label for="interval">Interval</label>
+        <input type="number" min="0" placeholder="interval between color changes" id="intervalID">
+
+
+
+
+
+        
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
