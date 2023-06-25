@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Event Countdown</h1>
+    
+    <div class="event-input">
+        <!-- warning for both requireds -->
+        <label for="eventName">Event Name</label>
+        <input type="text" id="eventName" required>
+        <label for="date">Date</label>
+        <input type="date" id="date" required>
+        <label for="time">Time (Optional)</label>
+        <input type="text" id="time">
+        <!-- if no time, midnight in the local time zone -->
+        <button>Start</button>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
